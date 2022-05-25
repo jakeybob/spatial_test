@@ -1,4 +1,5 @@
 # install.packages(c("tidyverse","CARBayesST","ggplot2","gridExtra","leaflet","lubridate","sp","spdep","mapview"))
+# install.packages("sf")
 
 # dyn.load("/usr/local/gdal/lib/libgdal.so")
 library(tidyverse)
@@ -18,6 +19,12 @@ library(htmlwidgets)
 ## CARBayesST ####
 library(CARBayesST) 
 # Error: package or namespace load failed for ‘CARBayesST’ in dyn.load(file, DLLpath = DLLpath, ...):
+#   unable to load shared object '/mnt/home/b.taylor/.local/share/renv/cache/v5/R-4.1/x86_64-pc-linux-gnu/units/0.8-0/6c374b265ba437f8d384ec7a313edd96/units/libs/units.so':
+#   libudunits2.so.0: cannot open shared object file: No such file or directory
+
+## sf ####
+library(sf)
+# Error: package or namespace load failed for ‘sf’ in dyn.load(file, DLLpath = DLLpath, ...):
 #   unable to load shared object '/mnt/home/b.taylor/.local/share/renv/cache/v5/R-4.1/x86_64-pc-linux-gnu/units/0.8-0/6c374b265ba437f8d384ec7a313edd96/units/libs/units.so':
 #   libudunits2.so.0: cannot open shared object file: No such file or directory
 
